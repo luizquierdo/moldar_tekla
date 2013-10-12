@@ -26,13 +26,17 @@ namespace pluginmoldar
 
         public override List<InputDefinition> DefineInput()
         {
+            MessageBox.Show("antes de instanciar un picker");
+
             Picker picker = new Picker();
-            List<InputDefinition> inputList = new List<InputDefinition>();
+            List<InputDefinition> inputList = new List<InputDefinition>();            
 
             TSM.Beam muro = (TSM.Beam)picker.PickObject(Picker.PickObjectEnum.PICK_ONE_PART);
 
             InputDefinition input1 = new InputDefinition(muro.Identifier);
             inputList.Add(input1);
+
+            MessageBox.Show("despues de capturar un muro");
 
             return inputList;
         }
@@ -50,12 +54,17 @@ namespace pluginmoldar
                 CoordinateSystem coordenadasMuro = beam.GetCoordinateSystem();
                 model.GetWorkPlaneHandler().SetCurrentTransformationPlane(new TSM.TransformationPlane(coordenadasMuro));
 
-                PanelMoldar panel = new PanelMoldar(beam);
-                panel.dx = data.dx;
-                panel.dy = data.dy;
-                panel.diametroBarras = data.diametroBarras;
-                panel.diametroDiagonal = data.diametroDiagonales;
+                ParametrosPanel p = new ParametrosPanel(beam);
+                p.dx = data.dx;
+                p.dy = data.dy;
+                p.diametroBarras = data.diametroBarras;
+                p.diametroDiagonal = data.diametroDiagonales;
+                p.adicionalDerecha = data.largoDerecha;
+                p.adicionalIzquierda = data.largoIzquierda;
+                p.adicionalSuperior = data.largoSuperior;
+                p.adicionalInferior = data.largoInferior;          
 
+                PanelMoldar panel = new PanelMoldar(p);
                 panel.fabricar();
 
                 model.GetWorkPlaneHandler().SetCurrentTransformationPlane(currentTP);

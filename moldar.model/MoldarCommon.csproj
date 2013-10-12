@@ -66,29 +66,19 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BarrasHorizontalesVigueta.cs" />
-    <Compile Include="BarrasLongitudinalesVigueta.cs" />
-    <Compile Include="BarrasVerticalesVigueta.cs" />
-    <Compile Include="ComponenteMoldarRaiz.cs" />
     <Compile Include="ComponentePanel.cs" />
-    <Compile Include="DiagonalesHorizontalDerIzq.cs" />
-    <Compile Include="DiagonalesHorizontalIzqDer.cs" />
-    <Compile Include="DiagonalesVerticalDerIzq.cs" />
-    <Compile Include="DiagonalesVerticalIzqDer.cs" />
-    <Compile Include="DiagonalesVigueta.cs" />
-    <Compile Include="FabricaBarras.cs" />
-    <Compile Include="FabricaViguetas.cs" />
-    <Compile Include="GrupoBarrasHorizontales.cs" />
-    <Compile Include="GrupoBarrasVerticales.cs" />
-    <Compile Include="GrupoDiagonales.cs" />
-    <Compile Include="GrupoDiagonalesHorizontales.cs" />
-    <Compile Include="GrupoDiagonalesVerticales.cs" />
-    <Compile Include="GrupoEnfierraduras.cs" />
+    <Compile Include="ConjuntoPlacas.cs" />
+    <Compile Include="FabricaElementosPanel.cs" />
     <Compile Include="PanelMoldar.cs" />
+    <Compile Include="ParametrosPanel.cs" />
     <Compile Include="Placa.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="TubosVigueta.cs" />
     <Compile Include="Vigueta.cs" />
+    <Compile Include="ViguetaHorizontal.cs" />
+    <Compile Include="ViguetaVertical.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="TODO.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

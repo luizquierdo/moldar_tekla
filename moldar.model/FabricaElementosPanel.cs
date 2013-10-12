@@ -10,7 +10,7 @@ using Tekla.Structures.Model.UI;
 
 namespace moldar
 {
-    public class FabricaBarras
+    public class FabricaElementosPanel
     {
         public static SingleRebar createDiagonal(T3D.Point p1, T3D.Point p2, double diametro)
         {
@@ -26,6 +26,18 @@ namespace moldar
             return rebar;
         }
 
+        public static Beam createTubo(T3D.Point p1, T3D.Point p2)
+        {
+            Beam tubo = new Beam(Beam.BeamTypeEnum.BEAM);
+            tubo.Profile.ProfileString = "O13*1";
+            tubo.Name = "TUBO";
+            tubo.Material.MaterialString = "S235JR";
+            tubo.Class = "2";
+            tubo.StartPoint = p1;
+            tubo.EndPoint = p2;
+            return tubo;
+        }
+
         private static SingleRebar crearBarra(T3D.Point p1, T3D.Point p2, double diametro)
         {
             SingleRebar rebar = new SingleRebar();
@@ -35,7 +47,6 @@ namespace moldar
             return rebar;
         }
 
-
         private static void addRebarSettings(SingleRebar rebar, double diametro)
         {
             rebar.RadiusValues.Add(40.0);
@@ -43,6 +54,6 @@ namespace moldar
             rebar.Size = "" + diametro;
             rebar.NumberingSeries.StartNumber = 0;
             rebar.Grade = "Undefined";
-        }
+        }        
     }
 }

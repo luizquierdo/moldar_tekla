@@ -1,0 +1,247 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="b2241000-b500-42d5-b6b0-51fae3bd3964"
+  name="Model"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="d98a837f-20f4-4e2d-bea2-d21828ea50fd"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DTekla.Structures.Model"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="9856407b-0b52-446b-bf68-6c8e504f2c8a"
+        name="SingleRebar"
+        isAbstract="false"
+        isLeaf="true"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="832bc8f8-6227-4e4d-a1ad-2e537dbb6e82"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files%2FTekla Structures%2F19.0%2Fnt%2Fbin%2Fplugins%2FTekla.Structures.Model.dll&quot; Namespace%3DTekla.Structures.Model Type%3DSingleRebar"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="323a8510-825f-4e59-910c-3736570ad20d"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="eab6996b-e929-47b6-9c6b-fac3cb60129c">
+                <propertyInstance
+                  Id="ce3b35be-29b7-4e57-9af5-4ac7f3ce5a25"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="acb5e22a-b367-4b52-86c2-c1fbef0f94ba">
+                <propertyInstance
+                  Id="850127cf-5e78-42a7-96aa-b2bfa0c8800e"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="ba633d7c-bd1e-4a6d-87a2-1f5b3e7ef67f">
+                <propertyInstance
+                  Id="a7d1f8dd-5ac7-44b0-9a75-255e7ab6c1eb"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="45f25627-0bb0-4b72-96d0-12d59231ff48">
+                <propertyInstance
+                  Id="6bebf65a-d16c-4cdd-b789-bb3a569f8d3f"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="b38de53c-6c8c-49ea-a108-b22a97954f6d">
+                <propertyInstance
+                  Id="a36b7e4b-3a32-430e-8fbe-3581bc74230c"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="bacc9d9b-c42a-43fe-98a6-b653038de7ac"
+        name="Beam"
+        isAbstract="false"
+        isLeaf="true"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="82878102-56c8-4cc6-9154-a001a8999bec"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files%2FTekla Structures%2F19.0%2Fnt%2Fbin%2Fplugins%2FTekla.Structures.Model.dll&quot; Namespace%3DTekla.Structures.Model Type%3DBeam"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="a92fd46a-ca4c-4276-8ca6-4919c2b88fc3"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="b655341f-c9c7-452f-a9c4-80b45824de38">
+                <propertyInstance
+                  Id="f009bde1-e6b4-4e22-b792-c769e43c25b3"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="056cfc92-c1d9-4c27-a8c7-611faea6af8c">
+                <propertyInstance
+                  Id="fdd672dd-65b4-4278-8a1c-393e8278fb69"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="795717bd-e40f-48b6-9b24-6224d5c2ce49">
+                <propertyInstance
+                  Id="a0562ada-f717-44b2-94fc-5c81d5162944"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="efa99d52-338f-4da1-98f9-c462648da032">
+                <propertyInstance
+                  Id="d822ef34-7eb8-4f76-8531-816ff1e57bd5"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="a27540c1-2a47-4235-8abe-681a39b2449b">
+                <propertyInstance
+                  Id="710f92a3-3da9-483a-86b9-18025f678c99"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="28a2567c-0f92-4e13-8ea1-36c82287f27f"
+        name="Connection"
+        isAbstract="false"
+        isLeaf="true"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="b4022239-7c57-48e7-90ac-f5d802fa8559"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FC:%2Fwindows%2FMicrosoft.Net%2Fassembly%2FGAC_MSIL%2FTekla.Structures.Model%2Fv4.0_19.0.0.0__2f04dbe497b71114%2FTekla.Structures.Model.dll Namespace%3DTekla.Structures.Model Type%3DConnection"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="4228d212-3f10-4565-b0bc-2c8753ba6f9a"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="2dee37d9-8724-4233-9b5c-496dac6eba3e">
+                <propertyInstance
+                  Id="42219039-e6e1-43c9-9628-0ba713625059"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="24b405f8-6116-4c64-a47c-1cb1a65f16d9">
+                <propertyInstance
+                  Id="e6e56159-94a3-473c-b53c-5bccfaa7bf5d"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="cc0c2890-5c6c-42c6-8cf6-1115bfd2c5bd">
+                <propertyInstance
+                  Id="4719528f-7052-4c93-b9a0-91691cfa4dff"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="3a529a67-4f53-4da7-ac82-924bf81443e0">
+                <propertyInstance
+                  Id="dcff4023-1326-4f0e-9e3d-b8aa38c7cd1c"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="68c171f7-2a91-4fc8-a892-14cd43f9b701">
+                <propertyInstance
+                  Id="fefe3690-518b-41b3-8c4f-3f6e6ec90e27"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="889ab160-ebba-4207-8e4a-a834ca160bc9"
+        name="Model"
+        isAbstract="false"
+        isLeaf="true"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="07a0e39a-67a4-48b4-b8c4-65ae12902bea"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FC:%2Fwindows%2FMicrosoft.Net%2Fassembly%2FGAC_MSIL%2FTekla.Structures.Model%2Fv4.0_19.0.0.0__2f04dbe497b71114%2FTekla.Structures.Model.dll Namespace%3DTekla.Structures.Model Type%3DModel"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="10644101-b68c-4024-ac2a-c0dc40e01fb1"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="c27ed9a2-ad40-46b1-9b0f-bd7fce13e345">
+                <propertyInstance
+                  Id="a31c6e01-05d7-4fcc-b2f4-502b42288c00"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="67190e3e-8722-4937-884d-7993effa90ae">
+                <propertyInstance
+                  Id="fdf6a255-3590-46cb-b71e-2584e05592c5"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="c11af9ec-4fa2-4e82-841d-5ad69ceacecd">
+                <propertyInstance
+                  Id="e3eb063c-ec6b-41da-bf84-6cbc075a56de"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="1f1871d7-54fb-494c-9a53-787a3c153f74">
+                <propertyInstance
+                  Id="7217feda-8d83-4852-bdff-7f96b69e19e1"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="66d4951d-56aa-4fed-846b-2daeb205d940">
+                <propertyInstance
+                  Id="6d6e5d59-2125-43dd-95c8-e1dcd0ba5f5d"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

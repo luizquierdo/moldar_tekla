@@ -9,42 +9,70 @@ using Tekla.Structures.Model.UI;
 
 namespace moldar
 {
-    public class PanelMoldar : ComponenteMoldarRaiz {
+    public class PanelMoldar : ComponentePanel {
 
         private double avanceX, avanceY = 0;
+        private ParametrosPanel p;
+        private ConjuntoPlacas _placas;
 
-        public PanelMoldar(Beam muro) : base(muro)
+        public PanelMoldar(ParametrosPanel p)
         {
-            componentes = new ArrayList();            
+            this.p = p;
+
+            if (this._placas == null)
+            {
+                this._placas = new ConjuntoPlacas(p);
+            }
         }
 
-        public void inicializarComponentes()
+        public void fabricar()
         {
-            avanceX = dx;
-            avanceY = dy;
+            placas.fabricar();
 
-            Vigueta viguetaSuperior = FabricaViguetas
-                .fabricarViguetaHorizontal(muro, avanceX, avanceY, diametroBarras, diametroDiagonal);
+            p.dx = this.distanciaXPrimerConector();            
 
-            addComponente(viguetaSuperior);
+            avanceX = p.dx;
+            avanceY = p.dy;
 
-            while (avanceY + 400 < 2 * max.Y)
+            // aquí creo la vigueta horizontal superior
+            new ViguetaHorizontal(p, avanceY).fabricar();
+
+            // bajo en saltos de 400mm todo lo que puedo sin salirme del panel
+            while (avanceY + 400 < 2 * p.max.Y)
             {
                 avanceY += 400.0;
             }
 
-            Vigueta viguetaInferior = FabricaViguetas
-                .fabricarViguetaHorizontal(muro, avanceX, avanceY, diametroBarras, diametroDiagonal);
+            // creo la vigueta horizontal inferior
+            new ViguetaHorizontal(p, avanceY).fabricar();
 
-            addComponente(viguetaInferior);            
-
-            avanceY = dy;
-            avanceX = dx;
-            while (avanceX < max.X)
+            avanceY = p.dy;
+            avanceX = p.dx;
+            while (avanceX < p.max.X)
             {
-                Vigueta vVertical = FabricaViguetas.fabricarViguetaVertical(muro, avanceX, avanceY, diametroBarras, diametroDiagonal);
-                addComponente(vVertical);
+                ComponentePanel vVertical = new ViguetaVertical(p, avanceX);
+                vVertical.fabricar();
                 avanceX += 400.0;
+            }            
+        }
+       
+        public ConjuntoPlacas placas
+        {
+            get { return this._placas; }
+            set { this._placas = value; }
+        }
+
+        public double distanciaXPrimerConector()
+        {
+            double largoPlacas = _placas.largoPrimeraYUltimaPlaca();
+
+            if (largoPlacas > 400)
+            {
+                return largoPlacas - 400;
+            }
+            else
+            {
+                return largoPlacas;
             }
         }
     }

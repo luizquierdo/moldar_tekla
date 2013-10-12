@@ -1,11 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Express 2012 for Windows Desktop
+# Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MoldarTekla", "TeklaOpenApiTest\MoldarTekla.csproj", "{60928EEE-1EDC-43DB-8098-308FAA927B6E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PluginMoldar", "ClassLibrary1\PluginMoldar.csproj", "{A023604D-8FF8-4462-BFE9-7457ECB83A98}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MoldarCommon", "moldar.model\MoldarCommon.csproj", "{39A65DC2-7EBC-4D4C-BD11-2333E602DF28}"
+EndProject
+Project("{F088123C-0E9E-452A-89E6-6BA2F21D5CAC}") = "Moldar", "Moldar\Moldar.modelproj", "{342756A8-AA54-4760-A313-4D979A719DCB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -47,6 +49,16 @@ Global
 		{39A65DC2-7EBC-4D4C-BD11-2333E602DF28}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{39A65DC2-7EBC-4D4C-BD11-2333E602DF28}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{39A65DC2-7EBC-4D4C-BD11-2333E602DF28}.Release|x86.ActiveCfg = Release|Any CPU
+		{342756A8-AA54-4760-A313-4D979A719DCB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{342756A8-AA54-4760-A313-4D979A719DCB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{342756A8-AA54-4760-A313-4D979A719DCB}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{342756A8-AA54-4760-A313-4D979A719DCB}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{342756A8-AA54-4760-A313-4D979A719DCB}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{342756A8-AA54-4760-A313-4D979A719DCB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{342756A8-AA54-4760-A313-4D979A719DCB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{342756A8-AA54-4760-A313-4D979A719DCB}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{342756A8-AA54-4760-A313-4D979A719DCB}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{342756A8-AA54-4760-A313-4D979A719DCB}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

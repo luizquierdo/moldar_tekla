@@ -10,20 +10,23 @@ using System.Collections;
 
 namespace moldar
 {
-    public class Vigueta : ComponenteMoldarRaiz, ComponentePanel
+    public abstract class Vigueta : ComponentePanel
     {
-        public Vigueta(Beam muro, double dx, double dy) : base(muro, dx, dy)
-        { 
+        public const double ANCHO_VIGUETA_HORIZONTAL = 100;
+        public const double NORMAL_DIAGONAL = 150;
+        public const double DISTANCIA_A_TUBO = 18;
+        public const double DIAMETRO_TUBO = 13;
+
+        protected ParametrosPanel p;
+        protected double offset;
+
+        public Vigueta(ParametrosPanel p, double offset)  
+        {
+            this.p = p;
+            this.offset = offset;
         }
 
-        protected double getSeparacionDiagonalVertical()
-        {
-            return (max.Z - min.Z - ANCHO_VIGUETA_HORIZONTAL) / 2;
-        }
+        public abstract void fabricar();
 
-        protected double getSeparacionDiagonalHorizontal()
-        {
-            return (max.Z - min.Z - ANCHO_VIGUETA_HORIZONTAL + 2 * diametroBarras) / 2;
-        }
     }    
 }

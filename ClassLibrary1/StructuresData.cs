@@ -22,5 +22,16 @@ namespace pluginmoldar
         [Tekla.Structures.Plugins.StructuresField("P4")]
         public double diametroDiagonales;
 
+        [Tekla.Structures.Plugins.StructuresField("P5")]
+        public double largoSuperior;
+
+        [Tekla.Structures.Plugins.StructuresField("P6")]
+        public double largoInferior;
+
+        [Tekla.Structures.Plugins.StructuresField("P7")]
+        public double largoIzquierda;
+
+        [Tekla.Structures.Plugins.StructuresField("P8")]
+        public double largoDerecha;
     }
 }

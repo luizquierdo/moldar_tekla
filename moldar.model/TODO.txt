@@ -1,0 +1,23 @@
+﻿- Agregar la funcionalidad para alargar las barras para abajo y para arriba
+- Revisar que los tubos queden bien como Assemblies
+- Agregar las placas
+- Revisar el ancho de las viguetas
+- Agregar el tipo de acero
+- Ancho de viguetas verticales distinto al de las horizontales
+- Diámetro de barras verticales distinto al de las horizontales
+- Agregar tipo de terminación de barras superiores, laterales e inferiores:
+	. Clip
+	. En punta
+	. Tipo cabezal de término de muro
+
+	------
+
+	FIN ETAPA 1
+
+Luego,
+
+Cortes tupi y 45 grados en las placas
+"Piernas" para tapar los muros
+Detalles de terminación de muros y placas
+Dibujos
+

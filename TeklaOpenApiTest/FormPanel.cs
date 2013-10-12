@@ -37,16 +37,18 @@ namespace moldar
             T3D.CoordinateSystem coordenadasMuro = muro.GetCoordinateSystem();
             model.GetWorkPlaneHandler().SetCurrentTransformationPlane(new TransformationPlane(coordenadasMuro));
 
-            PanelMoldar panel = new PanelMoldar(muro);
+            ParametrosPanel p = new ParametrosPanel(muro);
+            p.dx = Double.Parse(this.txtDx.Text);
+            p.dy = Double.Parse(this.txtDz.Text);
+            p.adicionalDerecha = Double.Parse(this.txtAddDer.Text);
+            p.adicionalIzquierda = Double.Parse(this.txtAdIzq.Text);
+            p.adicionalSuperior = Double.Parse(this.txtAdicionalSup.Text);
+            p.adicionalInferior = Double.Parse(this.txtAdicionalInf.Text);
+            p.diametroBarras = 7.0;
+            p.diametroDiagonal = 4.0;
 
-            panel.dx = Double.Parse(this.txtDx.Text);
-            panel.dy = Double.Parse(this.txtDz.Text);
-            panel.adicionalDerecha = Double.Parse(this.txtAddDer.Text);
-            panel.adicionalIzquierda = Double.Parse(this.txtAdIzq.Text);
-            panel.diametroBarras = 7.0;
-            panel.diametroDiagonal = 4.0;
+            PanelMoldar panel = new PanelMoldar(p);            
 
-            panel.inicializarComponentes();
             panel.fabricar();
 
             model.GetWorkPlaneHandler().SetCurrentTransformationPlane(currentTP);
@@ -103,19 +105,6 @@ namespace moldar
             return true;
         }
 
-        private void button2_Click(object sender, EventArgs e)
-        {
-            Placa placa = new Placa();
-
-            for (int i = 0; i < 4; i++)
-            {
-                Beam muro = placa.create(new T3D.Point(i * 1200, 0, 0), new T3D.Point((i +1)* 1200, 0, 0));
-                muro.Insert();
-            }
-
-            model.CommitChanges();
-        }
-
         private void btnLimpiarFierro_Click(object sender, EventArgs e)
         {
             ModelObjectEnumerator r;
@@ -169,6 +158,11 @@ namespace moldar
         }
 
         private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void FormPanel_Load(object sender, EventArgs e)
         {
 
         }

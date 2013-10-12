@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="file:///C:/PROGRAM FILES (X86)/MICROSOFT VISUAL STUDIO 11.0/COMMON7/IDE/EXTENSIONS/MICROSOFT/ARCHITECTURE TOOLS/EXTENSIBILITY/Logging/ReverseEngineeringLog.xslt"?>
+<Log xmlns="http://schemas.microsoft.com/VisualStudio/2010/CodeGen.RE.Log" Label="Code Generation/Text Transformation Log">
+  <MessageClass Name="Message" Label="Message" Option="Show informational messages" />
+  <MessageClass Name="Warning" Label="Warning" Option="Show warnings" />
+  <MessageClass Name="Error" Label="Error" Option="Show errors" />
+  <MessageClass Name="Property" Label="Property" Option="Show metadata" />
+  <MessageClass Name="Diagnostic" Label="Message" Option="Show diagnostic messages" />
+  <Message Timestamp="2013-09-03T23:12:00" Importance="High" Text="Reverse Engineering Started." />
+  <Message Timestamp="2013-09-03T23:12:04" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'Moldar::moldar' -  (Package)" />
+  <Message Timestamp="2013-09-03T23:12:04" Importance="Medium" Text="Element reverse engineered into the UML model: 'Moldar::moldar::ParametrosPanel' -  (Class)" />
+  <Message Timestamp="2013-09-03T23:12:04" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'Moldar::moldar::ParametrosPanel::_adicionalDerecha' -  (Property)" />
+  <Message Timestamp="2013-09-03T23:12:04" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'Moldar::moldar::ParametrosPanel::_adicionalInferior' -  (Property)" />
+  <Message Timestamp="2013-09-03T23:12:04" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'Moldar::moldar::ParametrosPanel::_adicionalIzquierda' -  (Property)" />
+  <Message Timestamp="2013-09-03T23:12:04" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'Moldar::moldar::ParametrosPanel::_adicionalSuperior' -  (Property)" />
+  <Message Timestamp="2013-09-03T23:12:04" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'Moldar::moldar::ParametrosPanel::_diametroBarras' -  (Property)" />
+  <Message Timestamp="2013-09-03T23:12:04" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'Moldar::moldar::ParametrosPanel::_diametroDiagonal' -  (Property)" />
+  <Message Timestamp="2013-09-03T23:12:04" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'Moldar::moldar::ParametrosPanel::_dx' -  (Property)" />
+  <Message Timestamp="2013-09-03T23:12:04" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'Moldar::moldar::ParametrosPanel::_dy' -  (Property)" />
+  <Message Timestamp="2013-09-03T23:12:04" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'Moldar::moldar::ParametrosPanel::_max' -  (Property)" />
+  <Message Timestamp="2013-09-03T23:12:04" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'Moldar::moldar::ParametrosPanel::_min' -  (Property)" />
+  <Message Timestamp="2013-09-03T23:12:04" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'Moldar::moldar::ParametrosPanel::_muro' -  (Property)" />
+  <Message Timestamp="2013-09-03T23:12:04" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'Moldar::moldar::ParametrosPanel::adicionalDerecha' -  (Property)" />
+  <Message Timestamp="2013-09-03T23:12:04" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'Moldar::moldar::ParametrosPanel::adicionalInferior' -  (Property)" />
+  <Message Timestamp="2013-09-03T23:12:04" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'Moldar::moldar::ParametrosPanel::adicionalIzquierda' -  (Property)" />
+  <Message Timestamp="2013-09-03T23:12:04" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'Moldar::moldar::ParametrosPanel::adicionalSuperior' -  (Property)" />
+  <Message Timestamp="2013-09-03T23:12:04" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'Moldar::moldar::ParametrosPanel::diametroBarras' -  (Property)" />
+  <Message Timestamp="2013-09-03T23:12:04" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'Moldar::moldar::ParametrosPanel::diametroDiagonal' -  (Property)" />
+  <Message Timestamp="2013-09-03T23:12:04" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'Moldar::moldar::ParametrosPanel::dx' -  (Property)" />
+  <Message Timestamp="2013-09-03T23:12:04" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'Moldar::moldar::ParametrosPanel::dy' -  (Property)" />
+  <Message Timestamp="2013-09-03T23:12:04" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'Moldar::moldar::ParametrosPanel::max' -  (Property)" />
+  <Message Timestamp="2013-09-03T23:12:04" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'Moldar::moldar::ParametrosPanel::min' -  (Property)" />
+  <Message Timestamp="2013-09-03T23:12:04" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'Moldar::moldar::ParametrosPanel::muro' -  (Property)" />
+  <Message Timestamp="2013-09-03T23:12:04" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'Moldar::moldar::ParametrosPanel::ParametrosPanel' -  (Operation)" />
+  <Message Timestamp="2013-09-03T23:12:04" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'Moldar::moldar::ParametrosPanel::ParametrosPanel::muro' -  (Parameter)" />
+  <Message Timestamp="2013-09-03T23:12:04" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'Moldar::System' -  (Package)" />
+  <Message Timestamp="2013-09-03T23:12:04" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'Moldar::System::Double' -  (Class)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2013-09-03T23:12:04" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'Moldar::Tekla' -  (Package)" />
+  <Message Timestamp="2013-09-03T23:12:04" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'Moldar::Tekla::Structures' -  (Package)" />
+  <Message Timestamp="2013-09-03T23:12:04" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'Moldar::Tekla::Structures::Geometry3d' -  (Package)" />
+  <Message Timestamp="2013-09-03T23:12:04" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'Moldar::Tekla::Structures::Geometry3d::Point' -  (Class)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2013-09-03T23:12:04" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'Moldar::Tekla::Structures::Model' -  (Package)" />
+  <Message Timestamp="2013-09-03T23:12:04" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'Moldar::Tekla::Structures::Model::Beam' -  (Class)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2013-09-03T23:12:04" Importance="Diagnostic" Text="Relationship reverse engineered into the UML model: Moldar::moldar::ParametrosPanel to Moldar::System::Double (Association)" />
+  <Message Timestamp="2013-09-03T23:12:04" Importance="Diagnostic" Text="Relationship reverse engineered into the UML model: Moldar::moldar::ParametrosPanel to Moldar::System::Double (Association)" />
+  <Message Timestamp="2013-09-03T23:12:04" Importance="Diagnostic" Text="Relationship reverse engineered into the UML model: Moldar::moldar::ParametrosPanel to Moldar::System::Double (Association)" />
+  <Message Timestamp="2013-09-03T23:12:04" Importance="Diagnostic" Text="Relationship reverse engineered into the UML model: Moldar::moldar::ParametrosPanel to Moldar::System::Double (Association)" />
+  <Message Timestamp="2013-09-03T23:12:04" Importance="Diagnostic" Text="Relationship reverse engineered into the UML model: Moldar::moldar::ParametrosPanel to Moldar::System::Double (Association)" />
+  <Message Timestamp="2013-09-03T23:12:04" Importance="Diagnostic" Text="Relationship reverse engineered into the UML model: Moldar::moldar::ParametrosPanel to Moldar::System::Double (Association)" />
+  <Message Timestamp="2013-09-03T23:12:04" Importance="Diagnostic" Text="Relationship reverse engineered into the UML model: Moldar::moldar::ParametrosPanel to Moldar::System::Double (Association)" />
+  <Message Timestamp="2013-09-03T23:12:04" Importance="Diagnostic" Text="Relationship reverse engineered into the UML model: Moldar::moldar::ParametrosPanel to Moldar::System::Double (Association)" />
+  <Message Timestamp="2013-09-03T23:12:04" Importance="Diagnostic" Text="Relationship reverse engineered into the UML model: Moldar::moldar::ParametrosPanel to Moldar::Tekla::Structures::Geometry3d::Point (Association)" />
+  <Message Timestamp="2013-09-03T23:12:04" Importance="Diagnostic" Text="Relationship reverse engineered into the UML model: Moldar::moldar::ParametrosPanel to Moldar::Tekla::Structures::Geometry3d::Point (Association)" />
+  <Message Timestamp="2013-09-03T23:12:04" Importance="Diagnostic" Text="Relationship reverse engineered into the UML model: Moldar::moldar::ParametrosPanel to Moldar::Tekla::Structures::Model::Beam (Association)" />
+  <Message Timestamp="2013-09-03T23:12:04" Importance="High" Text="(1) type(s) fully reverse engineered." />
+  <Message Timestamp="2013-09-03T23:12:04" Importance="High" Text="(3) type(s) partially reverse engineered.  These types were not included in the original selection so their full definitions are not reverse engineered.  Instead, this shallow operation has simply ensured these types exist in the UML model because they are needed in order to fully describe other elements." />
+  <Message Timestamp="2013-09-03T23:12:04" Importance="High" Text="The reverse engineering operation completed with (0) error(s), and (0) warning(s)." />
+</Log>

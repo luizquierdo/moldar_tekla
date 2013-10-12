@@ -3,24 +3,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-using System.Collections;
 using Tekla.Structures.Model;
 using T3D = Tekla.Structures.Geometry3d;
 using Tekla.Structures.Model.UI;
 
 namespace moldar
 {
-    public abstract class ComponenteMoldarRaiz : ComponentePanel
+    public class ParametrosPanel
     {
-
-        protected Beam muro;
-        protected ArrayList componentes;
-        protected T3D.Point max, min;
-        
-        protected const double ANCHO_VIGUETA_HORIZONTAL = 100.0;
-        protected const double NORMAL_DIAGONAL = 150.0;
-        protected const double DISTANCIA_A_TUBO = 18.0;
-
         private double _diametroDiagonal;
         private double _diametroBarras;
         private double _dx;
@@ -30,40 +20,14 @@ namespace moldar
         private double _adicionalSuperior;
         private double _adicionalInferior;
 
-        public ComponenteMoldarRaiz(Beam muro)
-        {
-            inicializarConstructor(muro);
-        }
+        private Beam _muro;
+        private T3D.Point _max, _min;
 
-        public ComponenteMoldarRaiz(Beam muro, double dx, double dy)
-        {
-            inicializarConstructor(muro);
-
-            _dx = dx;
-            _dy = dy;            
-        }
-
-        private void inicializarConstructor(Beam muro)
-        {
-            this.muro = muro;
-
-            max = muro.GetSolid().MaximumPoint;
-            min = muro.GetSolid().MinimumPoint;
-
-            componentes = new ArrayList();  
-        }
-
-        public void addComponente(ComponentePanel componente)
-        {
-            componentes.Add(componente);
-        }
-
-        public virtual void fabricar()
-        {
-            for (int i = 0; i < componentes.Count; i++)
-            {
-                ((ComponentePanel)componentes[i]).fabricar();
-            }
+        public ParametrosPanel(Beam muro)
+        { 
+            _muro = muro;
+            _max = muro.GetSolid().MaximumPoint;
+            _min = muro.GetSolid().MinimumPoint;
         }
 
         public double dx
@@ -101,5 +65,33 @@ namespace moldar
             get { return _adicionalIzquierda; }
             set { _adicionalIzquierda = value; }
         }
+
+        public double adicionalSuperior
+        {
+            get { return _adicionalSuperior; }
+            set { _adicionalSuperior = value; }
+        }
+
+        public double adicionalInferior
+        {
+            get { return _adicionalInferior; }
+            set { _adicionalInferior = value; }
+        }
+
+        public T3D.Point max
+        {
+            get { return _max; }
+        }
+
+        public T3D.Point min
+        {
+            get { return _min; }
+        }
+
+        public Beam muro
+        {
+            get { return _muro; }
+        }
+
     }
 }

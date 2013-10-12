@@ -20,6 +20,10 @@ namespace pluginmoldar
            @"            parameter(""Distancia Vertical"", ""P2"", distance, number, 2)" + "\n" +
            @"            parameter(""Diametro Barras"", ""P3"", distance, number, 3)" + "\n" +
            @"            parameter(""Diametro Diagonales"", ""P4"", distance, number, 4)" + "\n" +
+           @"            parameter(""Largo Superior"", ""P5"", distance, number, 5)" + "\n" +
+           @"            parameter(""Largo Inferior"", ""P6"", distance, number, 6)" + "\n" +
+           @"            parameter(""Largo Izquierda"", ""P7"", distance, number, 7)" + "\n" +
+           @"            parameter(""Largo Derecha"", ""P8"", distance, number, 8)" + "\n" +
             "        }\n" +
             "    }\n" +
             "}\n";

@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="757606d4-fb26-40f2-ab26-df00acbad734"
+  name="Structures"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="a847fa8f-789f-4747-b13d-958a4698444f"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DTekla.Structures"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="a080a4e0-6bf3-48c4-9154-459205190545"
+        LastKnownName="Geometry3d"
+        LastKnownLocation="Package2_1659.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="b2241000-b500-42d5-b6b0-51fae3bd3964"
+        LastKnownName="Model"
+        LastKnownLocation="Package4_1659.uml" />
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

@@ -36,16 +36,19 @@
             this.lblMuroSeleccionado = new System.Windows.Forms.Label();
             this.btnSeleccionarMuro = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.txtAdIzq = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.txtAddDer = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.txtAdicionalInf = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.txtAdicionalSup = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(222, 12);
+            this.button1.Location = new System.Drawing.Point(15, 144);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(145, 23);
             this.button1.TabIndex = 0;
@@ -99,7 +102,7 @@
             // 
             this.btnSeleccionarMuro.Location = new System.Drawing.Point(15, 12);
             this.btnSeleccionarMuro.Name = "btnSeleccionarMuro";
-            this.btnSeleccionarMuro.Size = new System.Drawing.Size(145, 23);
+            this.btnSeleccionarMuro.Size = new System.Drawing.Size(352, 23);
             this.btnSeleccionarMuro.TabIndex = 6;
             this.btnSeleccionarMuro.Text = "Seleccionar Muro";
             this.btnSeleccionarMuro.UseVisualStyleBackColor = true;
@@ -113,16 +116,6 @@
             this.label1.Size = new System.Drawing.Size(102, 13);
             this.label1.TabIndex = 7;
             this.label1.Text = "Muro Seleccionado:";
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(222, 41);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(145, 23);
-            this.button2.TabIndex = 9;
-            this.button2.Text = "Crear Placa";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // label2
             // 
@@ -157,16 +150,51 @@
             this.txtAddDer.Size = new System.Drawing.Size(100, 20);
             this.txtAddDer.TabIndex = 12;
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(193, 154);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(65, 13);
+            this.label4.TabIndex = 17;
+            this.label4.Text = "Adicional Inf";
+            // 
+            // txtAdicionalInf
+            // 
+            this.txtAdicionalInf.Location = new System.Drawing.Point(267, 154);
+            this.txtAdicionalInf.Name = "txtAdicionalInf";
+            this.txtAdicionalInf.Size = new System.Drawing.Size(100, 20);
+            this.txtAdicionalInf.TabIndex = 16;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(193, 128);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(72, 13);
+            this.label5.TabIndex = 15;
+            this.label5.Text = "Adicional Sup";
+            // 
+            // txtAdicionalSup
+            // 
+            this.txtAdicionalSup.Location = new System.Drawing.Point(267, 128);
+            this.txtAdicionalSup.Name = "txtAdicionalSup";
+            this.txtAdicionalSup.Size = new System.Drawing.Size(100, 20);
+            this.txtAdicionalSup.TabIndex = 14;
+            // 
             // FormPanel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(384, 143);
+            this.ClientSize = new System.Drawing.Size(384, 215);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.txtAdicionalInf);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.txtAdicionalSup);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.txtAddDer);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtAdIzq);
-            this.Controls.Add(this.button2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnSeleccionarMuro);
             this.Controls.Add(this.lblMuroSeleccionado);
@@ -177,6 +205,7 @@
             this.Controls.Add(this.button1);
             this.Name = "FormPanel";
             this.Text = "Creacion de Diagonales";
+            this.Load += new System.EventHandler(this.FormPanel_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -192,11 +221,14 @@
         private System.Windows.Forms.Label lblMuroSeleccionado;
         private System.Windows.Forms.Button btnSeleccionarMuro;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtAdIzq;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtAddDer;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox txtAdicionalInf;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox txtAdicionalSup;
     }
 }
 
